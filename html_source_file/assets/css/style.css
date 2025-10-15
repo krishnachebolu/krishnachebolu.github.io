@@ -67,7 +67,13 @@ papertitle { font-weight: 600; font-size: 100%; }
 
 .image.avatar:before { display: none; }
 
-.image.avatar img { border-radius: 100%; width: 45%; padding: 20px; }
+.image.avatar img {
+  border-radius: 100%;
+  width: 75%;   /* increase from 45% → 65% for zoom effect */
+  padding: 20px;
+  transform: scale(1.25); /* zoom in */
+  transform-origin: center; /* keep zoom centered */
+}
 
 #header .image.avatar { margin: 0 0 1em 0; width: 8.00em; }
 
